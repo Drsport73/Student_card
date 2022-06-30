@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+background-color: rgba(165, 163, 163, 0.4);
+background: url(75.jpg);
+}
+  
+
+.container {
+  width: 1024px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin: auto;
+}
+.grid * {
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.grid {
+
+ display: grid;
+  grid-template-columns: 502px 502px;
+  grid-template-rows: 50px 450px 200px 200px 200px 100px;
+  grid-auto-rows: 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "cell1 cell1"
+    "cell2 cell3"
+    "cell4 cell4"
+    "cell5 cell5"
+    "cell6 cell6"
+    "cell7 cell7";
+}
+
+.Student-card {
+opacity: 70%;
+  grid-area: cell1;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+.Photo {
+grid-area: cell2;
+border-radius:50px;
+box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+-webkit-box-size: cover;
+background-size: cover;
+background-position: top;
+opacity: 0.5px;
+background-image: url(https://sun9-83.userapi.com/impg/mORVeXX_GdiqatFU2K7SjU2jRO3SsiB-B96Oow/TREyLXqjykw.jpg?size=811x1080&quality=96&sign=e40ce9f91e13bd2ea6968c4b111e00d6&type=album);
+}
+
+
+
+.My-info {
+  grid-area: cell3;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  background: url("76.jpg");
+  opacity: 30%%;
+  border-radius: 50px;
+  background-position: bottom ;
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+  transition: all 1s;
+ 
+  
+}
+
+.My-info:hover{
+  background: none;
+  font-size: 20px;
+}
+
+.My-info , p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.my-targets {
+  background: url(target2.jpg);
+  background-position: center;
+  background-size: covers;
+ border-radius: 50px;
+  align-items: center;
+  place-content:center ;
+  grid-area: cell4;
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+  transition: all 0.3s;
+}
+.my-targets:hover{
+    font-size: 17px;
+    background: none;
+
+  
+}
+.my-targets h3, ol {
+    padding-top: 25px;
+    padding-left: 30px;
+}
+.my-experiens {
+  display: flex;
+  grid-area: cell6;
+  background: url(https://static.tildacdn.com/tild6439-6365-4636-a438-366332363966/cover0231140x570.png);
+  background-position: top;
+  background-size: cover;
+  padding-top: 10px;
+  justify-content: center;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+  transition: all 0.3s;
+}
+
+.my-experiens:hover{
+  background: none;
+  font-size: 17px;
+}
+
+
+.my-experiens td {
+  text-align: center;
+  width: 100px;
+}
+
+.my-experiens th{
+  border-bottom: 1px solid black;
+  
+}
+
+.my-experiens a{
+text-decoration: none;
+color: black;
+border-bottom: 1px solid black;
+}
+
+
+.my-experiens a:hover {
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+  background-color: rgb(180, 180, 178);
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
+  
+
+.lerning-time {
+  grid-area: cell5;
+  display: flex;
+  background:url(https://web-static.wrike.com/cdn-cgi/image/width=880,format=auto,q=80/blog/content/uploads/2019/05/Leading-Content-Marketers-Share-the-Best-Way-to-Make-a-Publishing-Calendar-1.jpg?av=880a639b156ba1112118ca10a768fb7a);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  box-shadow: 0 1px 1px 10px rgba(0, 0, 0 , 0.05);
+  border-radius: 50px;
+  transition: all 2s;
+}
+
+.lerning-time:hover{
+  background: none;
+ 
+
+}
+
+.lerning-time td{
+  text-align: center;
+  width: 120px;
+  
+}
+
+.lerning-time td:nth-child(1){
+  text-align: left;
+}
+.lerning-time td:nth-child(2){
+  text-align: right;
+}
+
+
+
+.social-network {
+  grid-area: cell7;
+  padding-top: 10px;
+  
+}
+
+.social-network li{
+  padding-top: 50px;
+  text-align: center;
+  list-style: none;
+}
+
+.social-network a{
+  
+  text-decoration:  none;
+  padding: 30px;
+
+}
+
+
+
+@media( max-width: 1024px){
+
+    .container{
+        width: 502px;
+        margin: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 502px;
+        grid-template-rows: 50px 350px 350px 200px 200px 200px 200px;
+        grid-auto-rows: 200px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        "cell1"
+        "cell2"
+        "cell3"
+        "cell4"
+        "cell5"
+        "cell6"
+        "cell7";
+}
